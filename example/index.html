@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+  <TITLE>Video pause observer test</TITLE>
+  <META name="viewport" content="width=device-width, initial-scale=1">
+  <STYLE>
+  video { width: 90vw; }
+  </STYLE>
+</HEAD>
+<BODY>
+Here is a sample video:
+<VIDEO controls src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4"></VIDEO>
+
+<SCRIPT type="text/javascript">
+// Filling the document with filler to make the viewport scrollable
+for(let lcv=0; lcv < 250; lcv++) {
+  const elem = document.createElement('DIV');
+  elem.textContent = `Scrollable filler line #${lcv+1}`;
+  document.body.appendChild(elem);
+}
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="../videopauseobserver.js"></SCRIPT>
+<SCRIPT type="text/javascript">new VideoPauseObserver(document.querySelector('video'));</SCRIPT>
+
+</BODY>
+</HTML>
