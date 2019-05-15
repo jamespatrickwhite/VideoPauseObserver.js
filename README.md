@@ -1,5 +1,5 @@
 # VideoPauseObserver.js
-A light utility library to automagically pause/unpause your video content when it's tabbed away / minimized / or scrolled out of the viewport.
+A light utility library to automagically pause your video content when it's tabbed away / minimized / or scrolled out of the viewport, and resume playback when returned to.
 
 ## Usage
 Include the script in your page:
